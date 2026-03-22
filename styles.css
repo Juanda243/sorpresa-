@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#1e3c72, #2a5298);
+  text-align: center;
+  overflow-x: hidden;
+  color: white;
+}
+
+/* Pantalla inicio */
+.pantalla {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Contenido */
+#contenido {
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px 10px;
+}
+
+.oculto {
+  display: none;
+}
+
+/* Textos */
+h1 {
+  font-size: clamp(20px, 5vw, 28px);
+  color: #a8d8ff;
+}
+
+.mensaje {
+  font-size: clamp(14px, 4vw, 18px);
+  margin: 15px 0;
+}
+
+/* Botones */
+button {
+  width: 80%;
+  max-width: 250px;
+  padding: 12px;
+  margin: 10px auto;
+  border-radius: 20px;
+  border: none;
+  background: #4facfe;
+  color: white;
+  font-size: clamp(13px, 3.5vw, 16px);
+  cursor: pointer;
+}
+
+button:hover {
+  background: #00c6ff;
+}
+
+/* Carrusel */
+.carrusel-container {
+  width: 100%;
+  max-width: 350px;
+  aspect-ratio: 9 / 16;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.carrusel {
+  display: flex;
+  height: 100%;
+  width: calc(100% * 18); /* 9 imágenes + 9 duplicadas */
+  animation: slide 18s linear infinite;
+}
+
+.carrusel img {
+  width: calc(100% / 18); /* divide el ancho total */
+  height: 100%;
+  object-fit: contain;
+  background: black;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Carta */
+.carta {
+  background: white;
+  color: black;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.contenido-carta {
+  display: none;
+  margin-top: 10px;
+}
+
+/* Declaración */
+#declaracion {
+  margin-top: 20px;
+}
+
+/* Corazones */
+.corazon {
+  position: fixed;
+  top: -10px;
+  font-size: 18px;
+  animation: caer 5s linear;
+}
+
+@keyframes caer {
+  to {
+    transform: translateY(100vh);
+  }
+}

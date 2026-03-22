@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para ti 💙</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💙</text></svg>">
+</head>
+
+<body>
+
+<!-- Pantalla inicial -->
+<div id="inicio" class="pantalla">
+  <h1>💌 Tengo algo para ti...</h1>
+  <button onclick="entrar()">Abrir</button>
+</div>
+
+<!-- Contenido -->
+<div id="contenido" class="oculto">
+
+  <h1>Para ti, mi princesita 💙</h1>
+
+  <p class="mensaje">
+    No sé en qué momento pasaste de ser alguien especial…  
+    a ser absolutamente todo 🥹
+  </p>
+
+  <!-- Carrusel -->
+  <div class="carrusel-container">
+    <div class="carrusel">
+
+      <!-- originales -->
+      <img src="img 1.jpeg">
+      <img src="img 2.jpeg">
+      <img src="img 3.jpeg">
+      <img src="img 4.jpeg">
+      <img src="img 5.jpeg">
+      <img src="img 6.jpeg">
+      <img src="img 7.jpeg">
+      <img src="img 8.jpeg">
+      <img src="img 9.jpeg">
+
+      <!-- duplicadas -->
+      <img src="img 1.jpeg">
+      <img src="img 2.jpeg">
+      <img src="img 3.jpeg">
+      <img src="img 4.jpeg">
+      <img src="img 5.jpeg">
+      <img src="img 6.jpeg">
+      <img src="img 7.jpeg">
+      <img src="img 8.jpeg">
+      <img src="img 9.jpeg">
+
+    </div>
+  </div>
+
+  <p class="mensaje">
+    Contigo todo se siente bonito… eres mi lugar favorito 💫
+  </p>
+
+  <!-- Carta -->
+  <div class="carta" onclick="abrirCarta(this)">
+    <p>💌 Toca para abrir</p>
+    <div class="contenido-carta">
+      Eres mi paz, mi risa, mi todo…  
+      y no quiero perderte nunca 💙
+    </div>
+  </div>
+
+  <!-- Declaración -->
+  <button onclick="mostrar()">Haz clic aquí 💙</button>
+
+  <div id="declaracion" class="oculto">
+    <h2>🥺 ¿puedo ser tu novio? 💙</h2>
+    <button onclick="si()">Sí 💙</button>
+    <button id="no">No 😢</button>
+  </div>
+
+  <h3 id="respuesta"></h3>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
